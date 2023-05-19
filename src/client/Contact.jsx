@@ -9,6 +9,7 @@ const Contact = () => {
     console.log(res.data);
   });
   return (
+    <>
     <nav className="flex justify-between p-2">
       <div className="flex items-center">
         <Link to="/">
@@ -43,6 +44,12 @@ const Contact = () => {
         </Link>
       </div>
     </nav>
+    <div className="flex justify-center items-center h-screen">
+      <h1 className="font-montserrat text-4xl">Contact</h1>
+        
+    </div>
+    
+    </>
   );
 };
 
