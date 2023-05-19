@@ -46,7 +46,6 @@ const Contact = () => {
     </nav>
     <div className="flex justify-center items-center h-screen">
       <h1 className="font-montserrat text-4xl">Contact</h1>
-        
     </div>
     
     </>
