@@ -24,18 +24,18 @@ const Contact = () => {
         >
           Home
         </Link>
-        {/* <Link
+        <Link
           to="/about"
           className="font-montserrat text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
         >
           About me
-        </Link> */}
-        {/* <Link
+        </Link>
+        <Link
           to="/projects"
           className="font-montserrat text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
         >
           Projects
-        </Link> */}
+        </Link>
         <Link
           to="/contact"
           className="font-montserrat bg-slate-200 text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
