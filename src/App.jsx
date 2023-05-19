@@ -6,6 +6,8 @@ import Home from './client/Home'
 import About from './client/About'
 import Project from './client/Project'
 import Contact from './client/Contact'
+import Admin from './client/Admin'
+import AddProject from './client/AddProject'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admin-4140mGK0M3" element={<Admin />} />
+        <Route path="/admin-4140mGK0M3/add-project" element={<AddProject />} />
       </Routes>
     </BrowserRouter>
   )

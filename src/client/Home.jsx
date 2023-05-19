@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo2.png";
+import cloud from "../assets/cloud2.png";
 import axios from "axios";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
   });
 
   return (
+    <>
     <nav className="flex justify-between p-2">
       <div className="flex items-center">
         <Link to="/">
@@ -44,6 +46,14 @@ const Home = () => {
         </Link>
       </div>
     </nav>
+    <div className="flex flex-col items-center mt-[5%] ">
+      <h1 className="font-montserrat text-3xl">This is my 6 months journey to learn cloud</h1>
+    </div>
+    <div className="flex flex-col items-center mt-[5%] ">
+      <img src={cloud} alt="cloud" className="w-1/4" />
+    </div>
+    </>
+
   );
 };
 
