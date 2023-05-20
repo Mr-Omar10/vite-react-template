@@ -9,6 +9,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
+//Google Analytics
+import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
+
+
 
 
 
@@ -20,6 +24,7 @@ const Contact = () => {
   const captchaRef = useRef(null);
   const MySwal = withReactContent(Swal)
   const siteKey = import.meta.env.VITE_SITE_KEY;
+  const gaEvent = useAnalyticsEventTracker("Contact us");
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -133,7 +138,7 @@ const Contact = () => {
                 sitekey={siteKey}
                 ref={captchaRef}
                 />
-                <input type="submit" value="Send" className="bg-slate-200 text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium" />
+                <input type="submit" onClick={() => gaEvent("send")} value="Send" className="bg-slate-200 text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium" />
             </form>
         </div>
     </div>
