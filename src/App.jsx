@@ -11,7 +11,7 @@ import AddProject from './client/AddProject'
 
 const App = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/#">
       <Routes>
         <Route path="/" basename="/" element={<Home />} />
         <Route path="/about" basename="/about" element={<About />} />
