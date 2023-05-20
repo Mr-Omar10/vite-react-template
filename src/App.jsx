@@ -11,7 +11,7 @@ import AddProject from './client/AddProject'
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/admin-4140mGK0M3" element={<Admin />} />
         <Route path="/admin-4140mGK0M3/add-project" element={<AddProject />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
