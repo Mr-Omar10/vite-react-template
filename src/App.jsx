@@ -11,12 +11,12 @@ import AddProject from './client/AddProject'
 
 const App = () => {
   return (
-    <BrowserRouter basename="/#">
+    <BrowserRouter basename="/">
       <Routes>
-        <Route path="/" basename="/" element={<Home />} />
-        <Route path="/about" basename="/about" element={<About />} />
-        <Route path="/projects" basename="/projects" element={<Project />} />
-        <Route path="/contact" basename="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/admin-4140mGK0M3" element={<Admin />} />
         <Route path="/admin-4140mGK0M3/add-project" element={<AddProject />} />
       </Routes>
