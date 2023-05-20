@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter , Route, Routes } from 'react-router-dom'
+import { BrowserRouter , Route, Routes, HashRouter } from 'react-router-dom'
 
 // pages
 import Home from './client/Home'
@@ -11,7 +11,7 @@ import AddProject from './client/AddProject'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/admin-4140mGK0M3" element={<Admin />} />
         <Route path="/admin-4140mGK0M3/add-project" element={<AddProject />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
