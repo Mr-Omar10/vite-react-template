@@ -108,7 +108,7 @@ const Contact = () => {
           className="font-montserrat text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
         >
           About me
-        </Link>
+        </Link> 
         <Link
           to="/projects"
           className="font-montserrat text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
